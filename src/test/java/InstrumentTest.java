@@ -10,7 +10,7 @@ public class InstrumentTest {
 
     @Before
     public void setUp() throws Exception {
-        instrument = new Instrument(40.00,60.00,"Wind", "Muramatsu");
+        instrument = new Instrument(40.00,60.00,InstrumentType.Wind, "Muramatsu");
     }
 
     @Test
@@ -25,7 +25,7 @@ public class InstrumentTest {
 
     @Test
     public void checkInstrumentType(){
-        assertEquals("Wind", instrument.getInstrumentType());
+        assertEquals(InstrumentType.Wind, instrument.getInstrumentType());
     }
 
     @Test

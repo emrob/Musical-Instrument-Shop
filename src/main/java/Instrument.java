@@ -1,17 +1,17 @@
 public class Instrument extends Product {
 
-    private String type;
+    private InstrumentType instrumenttype;
     private String make;
 
 
-    public Instrument(Double priceBought, Double priceSold, String type, String make) {
+    public Instrument(Double priceBought, Double priceSold, InstrumentType instrumenttype, String make) {
         super(priceBought, priceSold);
-        this.type = type;
+        this.instrumenttype = instrumenttype;
         this.make = make;
     }
 
-    public String getInstrumentType() {
-        return type;
+    public InstrumentType getInstrumentType() {
+        return instrumenttype;
     }
 
     public String getInstrumentMake() {
