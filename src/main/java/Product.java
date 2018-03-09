@@ -1,3 +1,5 @@
+import javax.sound.midi.Instrument;
+
 public abstract class Product {
 
     private  Double priceBought;
@@ -18,5 +20,12 @@ public abstract class Product {
     }
 
 
+    public static class Flute extends Instrument {
 
+        private String material;
+
+        public Flute(Double priceBought, Double priceSold, String type, String make) {
+            super(priceBought, priceSold, type, make);
+        }
+    }
 }
