@@ -1,16 +1,15 @@
 public class Sundry extends Product {
 
 
-    private String type;
+    private AccessoryType accessorytype;
 
-    public Sundry(Double priceBought, Double priceSold, String type) {
+    public Sundry(Double priceBought, Double priceSold, AccessoryType accessorytype) {
         super(priceBought, priceSold);
-        this.type = type;
-    }
-
-    public String getSundryType() {
-        return type;
+        this.accessorytype = accessorytype;
     }
 
 
+    public AccessoryType getAccessorytype() {
+        return accessorytype;
+    }
 }

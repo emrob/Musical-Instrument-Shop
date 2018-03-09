@@ -9,7 +9,7 @@ public class SundryTest {
 
     @Before
     public void setUp() throws Exception {
-        sundry = new Sundry(5.00, 15.00, "Guitar strings");
+        sundry = new Sundry(5.00, 15.00, AccessoryType.MusicStand);
     }
 
     @Test
@@ -24,6 +24,6 @@ public class SundryTest {
 
     @Test
     public void testSundryType(){
-        assertEquals("Guitar strings", sundry.getSundryType());
+        assertEquals(AccessoryType.MusicStand, sundry.getAccessorytype());
     }
 }
