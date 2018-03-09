@@ -20,12 +20,4 @@ public abstract class Product {
     }
 
 
-    public static class Flute extends Instrument {
-
-        private String material;
-
-        public Flute(Double priceBought, Double priceSold, String type, String make) {
-            super(priceBought, priceSold, type, make);
-        }
-    }
 }
