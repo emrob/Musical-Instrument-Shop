@@ -1,4 +1,4 @@
-public class Product {
+public abstract class Product {
 
     private  Double priceBought;
     private  Double priceSold;
@@ -16,7 +16,7 @@ public class Product {
     public Double getPriceSold() {
         return priceSold;
     }
-    
+
 
 
 }
