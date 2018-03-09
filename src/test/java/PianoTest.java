@@ -13,7 +13,12 @@ public class PianoTest {
     }
 
     @Test
-    public void CheckPianoColour(){
+    public void checkPianoColour(){
         assertEquals("Black", piano.colour);
+    }
+    
+    @Test
+    public void checkMarkUp(){
+        assertEquals(600.00, piano.calculateMarkUp(), 0.01);
     }
 }

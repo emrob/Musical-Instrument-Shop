@@ -1,4 +1,4 @@
-public class Instrument extends Product {
+public class Instrument extends Product implements ISell {
 
     private InstrumentType instrumenttype;
     private String make;
@@ -16,5 +16,11 @@ public class Instrument extends Product {
 
     public String getInstrumentMake() {
         return make;
+    }
+
+
+    @Override
+    public double calculateMarkUp() {
+        return getPriceSold() - getPriceBought();
     }
 }

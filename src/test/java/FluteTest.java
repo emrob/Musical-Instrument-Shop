@@ -36,4 +36,9 @@ public class FluteTest {
     public void checkFluteMaterial(){
         assertEquals("Silver", flute.getFluteMaterial());
     }
+
+    @Test
+    public void checkMarkUp(){
+        assertEquals(50, flute.calculateMarkUp(),0.01);
+    }
 }
