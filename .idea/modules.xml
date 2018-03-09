@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Musical Instrument Shop.iml" filepath="$PROJECT_DIR$/.idea/modules/Musical Instrument Shop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Musical_Instrument_Shop.iml" filepath="$PROJECT_DIR$/.idea/modules/Musical_Instrument_Shop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Musical_Instrument_Shop_main.iml" filepath="$PROJECT_DIR$/.idea/modules/Musical_Instrument_Shop_main.iml" group="Musical_Instrument_Shop" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Musical_Instrument_Shop_test.iml" filepath="$PROJECT_DIR$/.idea/modules/Musical_Instrument_Shop_test.iml" group="Musical_Instrument_Shop" />
+    </modules>
+  </component>
+</project>
