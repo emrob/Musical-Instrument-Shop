@@ -8,9 +8,8 @@ import static org.junit.Assert.assertNotNull;
 
 
 public class ShopTest {
-    private Shop shop;
-    private Piano piano;
-
+     Shop shop;
+     Piano piano;
 
 
     @Before
@@ -26,14 +25,12 @@ public class ShopTest {
 
     }
 
+    @Test
+    public void checkCanAddStock(){
+        Flute flute = new Flute(100.00, 150.00, InstrumentType.Wind, "Muramatsu", "Silver");
+   shop.addInstrument(flute);
+        assertEquals(1, shop.getStockSize());
+    }
 
 }
 
-//    Computer computer;
-//    Monitor monitor;
-//
-//    @Before
-//    public void before() {
-//        monitor = new Monitor(22, 786432);
-//        computer = new Computer(8, 512, monitor);
-//    }
