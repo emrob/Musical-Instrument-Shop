@@ -2,33 +2,36 @@ import java.util.ArrayList;
 
 public class Shop {
 
-    private ISell stock;
     private String name;
-    private ArrayList<Product> shopStock;
+    private ArrayList<ISell> shopStock;
 
-    public Shop(String name, ISell stock){
+    public Shop(String name){
         this.name = name;
-        this.stock = stock;
-        this.shopStock = new ArrayList<>();
+        this.shopStock = new ArrayList<ISell>();
     }
 
-    public ISell getStock(){
-        return stock;
-    }
 
     public String getShopName() {
         return name;
     }
 
-    public void addInstrument(Instrument instrument) {
-        shopStock.add(instrument);
+    public ArrayList<ISell> getShopStock() {
+        return shopStock;
     }
 
-    public int getStockSize(){
-        return shopStock.size();
+    public void setShopStock(ArrayList<ISell> shopStock) {
+        this.shopStock = shopStock;
     }
 
 
+    public void addStockItem(ISell newProduct){
+        shopStock.add(newProduct);
+    }
+
+    public void removeStockItem(ISell item){
+        shopStock.remove(item);
+    }
 
 }
+
 
