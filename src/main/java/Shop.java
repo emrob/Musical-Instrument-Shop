@@ -28,5 +28,7 @@ public class Shop {
         return shopStock.size();
     }
 
+
+
 }
 
