@@ -26,4 +26,9 @@ public class SundryTest {
     public void testSundryType(){
         assertEquals(AccessoryType.MusicStand, sundry.getAccessorytype());
     }
+
+    @Test
+    public void testMarkUp(){
+        assertEquals(10, sundry.calculateMarkUp(),0.01);
+    }
 }

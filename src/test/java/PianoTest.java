@@ -16,9 +16,14 @@ public class PianoTest {
     public void checkPianoColour(){
         assertEquals("Black", piano.colour);
     }
-    
+
     @Test
     public void checkMarkUp(){
         assertEquals(600.00, piano.calculateMarkUp(), 0.01);
+    }
+
+    @Test
+    public void checkMusicMethod(){
+        assertEquals("Plink Plonk is the sound I make", piano.music("Plink Plonk "));
     }
 }

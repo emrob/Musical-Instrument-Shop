@@ -41,4 +41,9 @@ public class FluteTest {
     public void checkMarkUp(){
         assertEquals(50, flute.calculateMarkUp(),0.01);
     }
+
+    @Test
+    public void checkPlaymethd(){
+        assertEquals("Floo is the sound I make", flute.music("Floo "));
+    }
 }

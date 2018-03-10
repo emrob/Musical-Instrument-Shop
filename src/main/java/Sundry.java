@@ -1,4 +1,4 @@
-public class Sundry extends Product {
+public class Sundry extends Product implements ISell {
 
 
     private AccessoryType accessorytype;
@@ -11,5 +11,10 @@ public class Sundry extends Product {
 
     public AccessoryType getAccessorytype() {
         return accessorytype;
+    }
+
+    @Override
+    public double calculateMarkUp() {
+        return getPriceSold() - getPriceBought();
     }
 }

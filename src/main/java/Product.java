@@ -1,6 +1,6 @@
 import javax.sound.midi.Instrument;
 
-public abstract class Product {
+public abstract class Product implements ISell {
 
     private  Double priceBought;
     private  Double priceSold;
@@ -17,6 +17,11 @@ public abstract class Product {
 
     public Double getPriceSold() {
         return priceSold;
+    }
+
+    @Override
+    public double calculateMarkUp() {
+        return getPriceSold() - getPriceBought();
     }
 
 
