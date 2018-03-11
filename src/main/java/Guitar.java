@@ -12,4 +12,5 @@ public class Guitar extends Instrument {
     public SoundType getSoundType() {
         return soundType;
     }
+
 }

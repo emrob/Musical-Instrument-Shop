@@ -21,4 +21,5 @@ public class GuitarTest {
     public void checkPlayMethod(){
         assertEquals("Strum is the sound I make", guitar.music("Strum "));
     }
+
 }

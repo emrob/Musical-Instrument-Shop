@@ -26,4 +26,5 @@ public class PianoTest {
     public void checkMusicMethod(){
         assertEquals("Plink Plonk is the sound I make", piano.music("Plink Plonk "));
     }
+
 }

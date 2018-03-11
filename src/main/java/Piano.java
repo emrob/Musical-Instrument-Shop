@@ -10,4 +10,5 @@ public class Piano extends Instrument {
     public String getColour() {
         return colour;
     }
+
 }

@@ -32,4 +32,5 @@ public class InstrumentTest {
     public void checkInstrumentMake(){
         assertEquals("Muramatsu", instrument.getInstrumentMake());
     }
+
 }

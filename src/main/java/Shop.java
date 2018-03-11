@@ -5,6 +5,7 @@ public class Shop {
     private String name;
     private ArrayList<ISell> shopStock;
 
+
     public Shop(String name){
         this.name = name;
         this.shopStock = new ArrayList<ISell>();
@@ -26,7 +27,6 @@ public class Shop {
 
     public void addStockItem(ISell newProduct){
         shopStock.add(newProduct);
-
     }
 
     public void removeStockItem(ISell item){
@@ -38,6 +38,7 @@ public class Shop {
         }
         return item.calculateMarkUp();
     }
+
 
 }
 

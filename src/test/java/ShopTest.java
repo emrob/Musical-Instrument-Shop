@@ -11,23 +11,18 @@ import static org.junit.Assert.assertNotNull;
 
 public class ShopTest {
      Shop shop;
-     Product product;
-
 
 
     @Before
     public void setUp() throws Exception {
         shop = new Shop("Emma's Music Shop");
-
     }
-
 
 
     @Test
     public void checkStockStartsEmpty(){
         ArrayList<ISell> stock = shop.getShopStock();
         assertEquals(0, stock.size());
-
     }
 
     @Test
@@ -54,9 +49,6 @@ public class ShopTest {
         shop.addStockItem(flute);
         assertEquals(50.00, shop.markup(flute),0.01);
     }
-
-
-
 
 }
 

@@ -26,4 +26,5 @@ public class Instrument extends Product implements IPlay {
     public String music(String data) {
         return data + "is the sound I make";
     }
+
 }

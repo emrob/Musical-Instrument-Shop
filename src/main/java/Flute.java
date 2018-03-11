@@ -12,4 +12,5 @@ public class Flute extends Instrument {
     public String getFluteMaterial() {
         return material;
     }
+
 }

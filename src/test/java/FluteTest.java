@@ -46,4 +46,5 @@ public class FluteTest {
     public void checkPlaymethd(){
         assertEquals("Floo is the sound I make", flute.music("Floo "));
     }
+
 }
