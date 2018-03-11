@@ -26,10 +26,17 @@ public class Shop {
 
     public void addStockItem(ISell newProduct){
         shopStock.add(newProduct);
+
     }
 
     public void removeStockItem(ISell item){
         shopStock.remove(item);
+    }
+
+    public double markup(ISell item){
+        if (shopStock.contains(item)){
+        }
+        return item.calculateMarkUp();
     }
 
 }
