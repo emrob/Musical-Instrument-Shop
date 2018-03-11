@@ -31,5 +31,5 @@ public class SundryTest {
     public void testMarkUp(){
         assertEquals(10, sundry.calculateMarkUp(),0.01);
     }
-    
+
 }
