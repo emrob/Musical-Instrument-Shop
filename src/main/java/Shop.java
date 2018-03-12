@@ -6,7 +6,7 @@ public class Shop {
     private ArrayList<ISell> shopStock;
 
 
-    public Shop(String name){
+    public Shop(String name) {
         this.name = name;
         this.shopStock = new ArrayList<ISell>();
     }
@@ -25,21 +25,27 @@ public class Shop {
     }
 
 
-    public void addStockItem(ISell newProduct){
+    public void addStockItem(ISell newProduct) {
         shopStock.add(newProduct);
     }
 
-    public void removeStockItem(ISell item){
+    public void removeStockItem(ISell item) {
         shopStock.remove(item);
     }
 
-    public double markup(ISell item){
-        if (shopStock.contains(item)){
+    public double markup(ISell item) {
+        if (shopStock.contains(item)) {
         }
         return item.calculateMarkUp();
     }
 
+    public int totalProfit() {
+        int total = 0;
+        for (ISell item : shopStock) {
+            total += item.calculateMarkUp();
+        }
+        return total;
+    }
+
 
 }
-
-

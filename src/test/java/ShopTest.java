@@ -50,5 +50,14 @@ public class ShopTest {
         assertEquals(50.00, shop.markup(flute),0.01);
     }
 
+    @Test
+    public void checkProfit(){
+        Flute flute = new Flute(100.00, 150.00, InstrumentType.Wind, "Muramatsu", "Silver");
+        Flute flute1 = new Flute(100.00, 150.00, InstrumentType.Wind, "Muramatsu", "Silver");
+        shop.addStockItem(flute);
+        shop.addStockItem(flute1);
+        assertEquals(100, shop.totalProfit());
+    }
+
 }
 
